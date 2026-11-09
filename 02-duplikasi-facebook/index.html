@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daftar Akun Meta</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f0f2f5; display: flex; justify-content: center; padding: 40px; }
+  .card { background: white; padding: 24px; border-radius: 8px; width: 100%; max-width: 400px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  h2 { font-size: 20px; margin: 0 0 8px; }
+  p.sub { font-size: 14px; color: #606770; margin-bottom: 16px; }
+  .row { display: flex; gap: 8px; }
+  input, select { width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #ccd0d5; border-radius: 5px; font-size: 15px; }
+  .label { font-size: 12px; color: #606770; margin-bottom: 4px; display: flex; align-items: center; gap: 4px; }
+  button { width: 100%; padding: 10px; background: #1877f2; color: white; font-weight: bold; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; }
+  button:hover { background: #166fe5; }
+  .terms { font-size: 11px; color: #606770; margin: 12px 0; }
+  .terms a { color: #385898; text-decoration: none; }
+  .login-link { text-align: center; font-size: 14px; margin-top: 12px; }
+  .login-link a { color: #1877f2; text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h2>Get started with a Meta account</h2>
+    <p class="sub">Meta Account lets you access multiple Meta technologies, such as Facebook, easily and securely.</p>
+    
+    <form>
+      <div class="label">Name</div>
+      <div class="row">
+        <input type="text" placeholder="First name" required>
+        <input type="text" placeholder="Surname" required>
+      </div>
+
+      <div class="label">Date of birth</div>
+      <div class="row">
+        <select required><option>Day</option></select>
+        <select required><option>Month</option></select>
+        <select required><option>Year</option></select>
+      </div>
+
+      <div class="label">Gender</div>
+      <select required>
+        <option>Select your gender</option>
+        <option>Female</option>
+        <option>Male</option>
+        <option>Custom</option>
+      </select>
+
+      <input type="text" placeholder="Mobile number or email address" required>
+      <input type="password" placeholder="Password" required>
+
+      <div class="terms">
+        By tapping Submit, you agree to create an account and to Facebook's <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. 
+        <a href="#">Privacy Policy</a> describes the ways we can use the information we collect...
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="login-link">
+      <a href="#">I already have an account</a>
+    </div>
+  </div>
+</body>
+      </html>
